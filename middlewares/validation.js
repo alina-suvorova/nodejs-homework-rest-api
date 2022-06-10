@@ -7,7 +7,6 @@ const validateBody = (schema) => async (req, res, next) => {
         return res.status(400).json({status: 'error', code: 400, message: err.message})
   } 
  };
- 
  const validateParams = (schema) => async (req, res, next) => {
     try {
         await schema.validateAsync(req.params);
@@ -17,7 +16,6 @@ const validateBody = (schema) => async (req, res, next) => {
         return res.status(400).json({status: 'error', code: 400, message: err.message})
   } 
  };
- 
  const validateUpdateFavorite = (schema) => async (req, res, next) => {
    try {
      await schema.validateAsync(req.body);
