@@ -16,6 +16,7 @@ class AuthService {
             name: newUser.name,
             email: newUser.email,
             role: newUser.role,
+            avatar: newUser.avatar, 
             }
     };
     async login({ email, password }) {
@@ -47,7 +48,6 @@ class AuthService {
 
     #generateToken(user) {
         const payload = { id: user.id }
-    console.log(SECRET_KEY)
         const token = jwt.sign(payload, SECRET_KEY, { expiresIn: '2h' })
         return token
     };

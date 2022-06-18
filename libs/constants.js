@@ -12,5 +12,6 @@ const Role = {
     ADMIN: 'admin',
     USER: 'user',
 };
+const FOLDER_CLOUD_AVATARS = 'avatars'
 
-module.exports = { HTTP_STATUS_CODE, Role};
+module.exports = { HTTP_STATUS_CODE, Role, FOLDER_CLOUD_AVATARS};
