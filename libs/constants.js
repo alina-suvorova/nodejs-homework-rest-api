@@ -7,6 +7,7 @@ const HTTP_STATUS_CODE = {
     INTERNAL_SERVER_ERROR: 500,
     CONFLICT: 409,
     UNAUTHORIZED: 401,
+    SERVICE_UNAVAILABLE: 503,
 };
 const Role = {
     ADMIN: 'admin',
